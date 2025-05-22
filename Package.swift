@@ -34,14 +34,15 @@ let package = Package(
                 "Native/NativeScenario.swift",
                 "Native/NativeTestCase.swift",
                 "Native/ParseState.swift",
-                "Native/gherkin-languages.json"
+                "Native/gherkin-languages.json",
+                "Core/UnusedStepsTracker.h",
+                "Native/XCGNativeInitializer.h"
             ],
             sources: [
-                "Core/UnusedStepsTracker.h",
                 "Core/UnusedStepsTracker.m",
-                "Native/XCGNativeInitializer.h",
                 "Native/XCGNativeInitializer.m"
             ],
+            publicHeadersPath: "include_objc",
             cSettings: [
                 .headerSearchPath("Core"),
                 .headerSearchPath("Native")
@@ -57,7 +58,8 @@ let package = Package(
                 "Core/UnusedStepsTracker.h",
                 "Core/UnusedStepsTracker.m",
                 "Native/XCGNativeInitializer.h",
-                "Native/XCGNativeInitializer.m"
+                "Native/XCGNativeInitializer.m",
+                "include_objc"
             ],
             sources: [
                 "Core/Background.swift",
