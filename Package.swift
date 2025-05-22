@@ -57,7 +57,7 @@ let package = Package(
                 "Core/UnusedStepsTracker.m",
                 "Native/XCGNativeInitializer.m",
                 "include_objc/UnusedStepsTracker.h",
-                "include/objc/XCGNativeInitializer.h",
+                "include_objc/XCGNativeInitializer.h",
                 "Native/XCTest_Gherkin.h"
             ],
             sources: [
