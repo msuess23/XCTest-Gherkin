@@ -79,11 +79,12 @@ let package = Package(
                 "Native/NativeTestCase.swift",
                 "Native/ParseState.swift"
             ],
-            linkerSettings: [
-                .linkedFramework("XCTest", .when(platforms: [.iOS]))
-            ],
             resources: [
                 .process("Native/gherkin-languages.json")
-            ])
+            ],            
+            linkerSettings: [
+                .linkedFramework("XCTest", .when(platforms: [.iOS]))
+            ]
+        )
     ]
 )
