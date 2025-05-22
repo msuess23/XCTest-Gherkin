@@ -34,9 +34,7 @@ let package = Package(
                 "Native/NativeScenario.swift",
                 "Native/NativeTestCase.swift",
                 "Native/ParseState.swift",
-                "Native/gherkin-languages.json",
-                "Core/UnusedStepsTracker.h",
-                "Native/XCGNativeInitializer.h"
+                "Native/gherkin-languages.json"
             ],
             sources: [
                 "Core/UnusedStepsTracker.m",
@@ -55,9 +53,7 @@ let package = Package(
             ],
             path: "Pod",
             exclude: [
-                "Core/UnusedStepsTracker.h",
                 "Core/UnusedStepsTracker.m",
-                "Native/XCGNativeInitializer.h",
                 "Native/XCGNativeInitializer.m",
                 "include_objc"
             ],
