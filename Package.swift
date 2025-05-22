@@ -34,7 +34,8 @@ let package = Package(
                 "Native/NativeScenario.swift",
                 "Native/NativeTestCase.swift",
                 "Native/ParseState.swift",
-                "Native/gherkin-languages.json"
+                "Native/gherkin-languages.json",
+                "Native/XCTest_Gherkin.h"
             ],
             sources: [
                 "Core/UnusedStepsTracker.m",
@@ -55,7 +56,9 @@ let package = Package(
             exclude: [
                 "Core/UnusedStepsTracker.m",
                 "Native/XCGNativeInitializer.m",
-                "include_objc"
+                "include_objc/UnusedStepsTracker.h",
+                "include/objc/XCGNativeInitializer.h",
+                "Native/XCTest_Gherkin.h"
             ],
             sources: [
                 "Core/Background.swift",
