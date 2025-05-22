@@ -5,8 +5,8 @@
 //  Created by Kerr Marin Miller on 2017-10-08.
 //
 
-#import "XCGNativeInitializer.h"
-#import "UnusedStepsTracker.h"
+#import <XCTest_Gherkin_ObjC/XCGNativeInitializer.h>
+#import <XCTest_Gherkin_ObjC/UnusedStepsTracker.h>
 
 @implementation XCGNativeInitializer
 

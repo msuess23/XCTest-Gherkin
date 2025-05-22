@@ -5,7 +5,7 @@
 //  Created by Ilya Puchka on 25/08/2018.
 //
 
-#import "UnusedStepsTracker.h"
+#import <XCTest_Gherkin_ObjC/UnusedStepsTracker.h>
 
 @interface UnusedStepsTracker() <XCTestObservation>
 @property (nonatomic, strong) NSMutableSet<NSString *> *allSteps;
